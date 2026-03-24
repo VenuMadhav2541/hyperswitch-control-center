@@ -5,7 +5,7 @@ let make = () => {
   let (redirectToken, setRedirecToken) = React.useState(_ => "")
   let fetchDetails = useGetMethod()
   let updateDetails = useUpdateMethod()
-  let showToast = ToastState.useShowToast()
+  let showToast = ToastAdapter.useShowToast()
   let fetchMerchantAccountDetails = MerchantDetailsHook.useFetchMerchantDetails()
   let merchentDetails = MerchantDetailsHook.useMerchantDetailsValue()
   let (screenState, setScreenState) = React.useState(_ => PageLoaderWrapper.Loading)
